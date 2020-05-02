@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="sideMenuTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="view" id="BYZ-38-t0r" customClass="ViewController" customModule="sideMenuTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,7 +25,7 @@
         <!--Content View Controller-->
         <scene sceneID="LAZ-Hy-OrW">
             <objects>
-                <viewController id="YaW-rb-nl9" customClass="ContentViewController" customModule="sideMenuTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="content" id="YaW-rb-nl9" customClass="ContentViewController" customModule="sideMenuTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fXQ-ZN-kmc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,7 +40,7 @@
         <!--Side Menu View Controller-->
         <scene sceneID="lc0-yu-kiz">
             <objects>
-                <viewController id="UQD-cY-P9y" customClass="SideMenuViewController" customModule="sideMenuTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="menu" id="UQD-cY-P9y" customClass="SideMenuViewController" customModule="sideMenuTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vlY-cb-8aD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
