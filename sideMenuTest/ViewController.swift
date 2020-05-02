@@ -33,6 +33,7 @@ class ViewController: UIViewController {
         presentsideMenu()
     }
     
+    // 再度メニュー開始
     func presentsideMenu() {
         // viewWillApperを呼び出す
         sideMenuVC.beginAppearanceTransition(true, animated: true)
@@ -42,6 +43,7 @@ class ViewController: UIViewController {
             let bounds = self.sideMenuVC.view.bounds
             self.sideMenuVC.view.frame = CGRect(x: -bounds.size.width / 2, y: 0, width: bounds.size.width, height: bounds.size.height)
         }, completion: { _ in
+            // viewDidApperを呼び出す
             self.sideMenuVC.endAppearanceTransition()
         })
     }
