@@ -16,6 +16,7 @@ class SideMenuViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         self.view.backgroundColor = .yellow
+        
     }
     
 

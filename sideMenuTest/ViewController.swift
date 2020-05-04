@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         
         self.view.backgroundColor = .red
         
-        let contentVC = self.storyboard?.instantiateViewController(identifier: "navi")
+        let contentVC = self.storyboard?.instantiateViewController(identifier: "content")
         self.addChild(contentVC!)
         self.view.addSubview(contentVC!.view)
         contentVC!.didMove(toParent: self)

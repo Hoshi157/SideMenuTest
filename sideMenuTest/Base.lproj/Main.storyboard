@@ -53,23 +53,5 @@
             </objects>
             <point key="canvasLocation" x="3944.9275362318845" y="131.91964285714286"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="gSD-1Y-bkn">
-            <objects>
-                <navigationController storyboardIdentifier="navi" automaticallyAdjustsScrollViewInsets="NO" id="WiQ-Rc-I0J" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XPg-Xz-XVI">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="YaW-rb-nl9" kind="relationship" relationship="rootViewController" id="tgF-CG-iC5"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TrN-e8-YMy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1997.1014492753625" y="127.90178571428571"/>
-        </scene>
     </scenes>
 </document>

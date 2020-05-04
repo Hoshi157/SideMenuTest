@@ -19,15 +19,21 @@ class ContentViewController: UIViewController {
         
         self.view.backgroundColor = .blue
         
+        let naviBar = UINavigationBar(frame: CGRect(x: 0, y: 50, width: UIScreen.main.bounds.width, height: 50))
+        naviBar.barTintColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
+        
+        let naviItem = UINavigationItem()
+        naviItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(menuButtonAction(_:)))
+        naviItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(dismissButtonAction(_:)))
+        
+        naviBar.pushItem(naviItem, animated: false)
+        self.view.addSubview(naviBar)
+        
         self.addChild(sideMenuVC)
         self.view.addSubview(sideMenuVC.view)
-        sideMenuVC.didMove(toParent: self)
+        self.didMove(toParent: self)
         
         sideMenuVC.view.isHidden = true
-        self.view.bringSubviewToFront(sideMenuVC.view)
-        
-        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(menuButtonAction(_:)))
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(dismissButtonAction(_:)))
     }
     
     @objc func menuButtonAction(_ button: UIBarButtonItem) {
