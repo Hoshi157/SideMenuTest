@@ -7,10 +7,17 @@
 //
 
 import UIKit
+import SnapKit
 
 class ContentViewController: UIViewController {
     
     let sideMenuVC = SideMenuViewController()
+    
+    private var testLabel: UILabel = {
+        let label = UILabel()
+        label.backgroundColor = .brown
+        return label
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +25,7 @@ class ContentViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         self.view.backgroundColor = .blue
+        view.addSubview(testLabel)
         
         let naviBar = UINavigationBar(frame: CGRect(x: 0, y: 50, width: UIScreen.main.bounds.width, height: 50))
         naviBar.barTintColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
@@ -34,6 +42,11 @@ class ContentViewController: UIViewController {
         self.didMove(toParent: self)
         
         sideMenuVC.view.isHidden = true
+        
+        testLabel.snp.makeConstraints { (make) in
+            make.center.equalTo(self.view)
+            make.size.equalTo(50)
+        }
     }
     
     @objc func menuButtonAction(_ button: UIBarButtonItem) {
